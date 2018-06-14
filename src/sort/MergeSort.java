@@ -1,30 +1,30 @@
 package sort;
 
 /**
- * ¹é²¢ÅÅĞò
- * 
- * @author shkstart 
+ * å½’å¹¶æ’åº
+ *
+ * @author shkstart
  * 2013-11-27
  */
 public class MergeSort {
 	public static void mergeSort(DataWrap[] data) {
-		// ¹é²¢ÅÅĞò
+		// å½’å¹¶æ’åº
 		sort(data, 0, data.length - 1);
 	}
 
-	// ½«Ë÷Òı´Óleftµ½right·¶Î§µÄÊı×éÔªËØ½øĞĞ¹é²¢ÅÅĞò
+	// å°†ç´¢å¼•ä»leftåˆ°rightèŒƒå›´çš„æ•°ç»„å…ƒç´ è¿›è¡Œå½’å¹¶æ’åº
 	private static void sort(DataWrap[] data, int left, int right) {
 		if(left < right){
-			//ÕÒ³öÖĞ¼äË÷Òı
+			//æ‰¾å‡ºä¸­é—´ç´¢å¼•
 			int center = (left + right)/2;
 			sort(data,left,center);
 			sort(data,center+1,right);
-			//ºÏ²¢
+			//åˆå¹¶
 			merge(data,left,center,right);
 		}
 	}
 
-	// ½«Á½¸öÊı×é½øĞĞ¹é²¢£¬¹é²¢Ç°Á½¸öÊı×éÒÑ¾­ÓĞĞò£¬¹é²¢ºóÒÀÈ»ÓĞĞò
+	// å°†ä¸¤ä¸ªæ•°ç»„è¿›è¡Œå½’å¹¶ï¼Œå½’å¹¶å‰ä¸¤ä¸ªæ•°ç»„å·²ç»æœ‰åºï¼Œå½’å¹¶åä¾ç„¶æœ‰åº
 	private static void merge(DataWrap[] data, int left, int center, int right) {
 		DataWrap[] tempArr = new DataWrap[data.length];
 		int mid = center + 1;
@@ -54,8 +54,8 @@ public class MergeSort {
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "") };
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		mergeSort(data);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

@@ -1,6 +1,6 @@
 package sort;
 /**
- * ÕÛ°ë²åÈëÅÅĞò
+ * æŠ˜åŠæ’å…¥æ’åº
  * @author shkstart
  * 2013-11-27
  */
@@ -8,7 +8,7 @@ package sort;
 
 public class BinaryInsertSort {
 	public static void binaryInsertSort(DataWrap[] data) {
-		System.out.println("¿ªÊ¼ÅÅĞò");
+		System.out.println("å¼€å§‹æ’åº");
 		int arrayLength = data.length;
 		for (int i = 1; i < arrayLength; i++) {
 			DataWrap temp = data[i];
@@ -37,8 +37,8 @@ public class BinaryInsertSort {
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "")};
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		binaryInsertSort(data);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

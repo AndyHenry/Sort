@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * ¿ìËÙÅÅĞò
+ * å¿«é€Ÿæ’åº
  * @author shkstart
  * 2013-11-27
  */
@@ -20,10 +20,10 @@ public class QuickSort {
 			while (true) {
 				while (i < end && data[++i].compareTo(base) <= 0)
 					System.out.println("i=" + i);
-					;
+				;
 				while (j > start && data[--j].compareTo(base) >= 0)
 					System.out.println("j=" + j);
-					;
+				;
 				if (i < j) {
 					swap(data, i, j);
 				} else {
@@ -44,8 +44,8 @@ public class QuickSort {
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "") };
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		quickSort(data);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

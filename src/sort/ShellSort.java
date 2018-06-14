@@ -1,13 +1,13 @@
 package sort;
 /**
- * ShellÅÅÐò
+ * ShellæŽ’åº
  * @author shkstart
  * 2013-11-27
  */
 
 public class ShellSort {
 	public static void ShellSort(DataWrap[] data) {
-		System.out.println("¿ªÊ¼ÅÅÐò");
+		System.out.println("å¼€å§‹æŽ’åº");
 		int arrayLength = data.length;
 
 		int h = 1;
@@ -15,7 +15,7 @@ public class ShellSort {
 			h = h * 3 + 1;
 		}
 		while (h > 0) {
-			System.out.println("===hµÄÖµ£º" + h + "===");
+			System.out.println("===hçš„å€¼ï¼š" + h + "===");
 			for (int i = h; i < arrayLength; i++) {
 				DataWrap temp = data[i];
 				if (data[i].compareTo(data[i - h]) < 0) {
@@ -32,14 +32,14 @@ public class ShellSort {
 	}
 
 	public static void main(String[] args) {
-		DataWrap[] data = { 
+		DataWrap[] data = {
 				new DataWrap(9, ""), new DataWrap(-16, ""),
 				new DataWrap(21, "*"), new DataWrap(23, ""),
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "")};
-		System.out.println("ÅÅÐòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æŽ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		ShellSort(data);
-		System.out.println("ÅÅÐòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æŽ’åºä¹‹åŽï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

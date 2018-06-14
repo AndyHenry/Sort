@@ -1,13 +1,13 @@
 package sort;
 
 /**
- * Ö±½Ó²åÈëÅÅĞò
+ * ç›´æ¥æ’å…¥æ’åº
  * @author shkstart
  * 2013-11-27
  */
 public class InsertSort {
 	public static void insertSort(DataWrap[] data){
-		System.out.println("¿ªÊ¼ÅÅĞò");
+		System.out.println("å¼€å§‹æ’åº");
 		int arrayLength = data.length;
 		for(int i = 1;i < arrayLength;i++){
 			DataWrap temp = data[i];
@@ -20,7 +20,7 @@ public class InsertSort {
 			}
 			System.out.println(java.util.Arrays.toString(data));
 		}
-		
+
 	}
 	public static void main(String[] args) {
 		DataWrap[] data = { new DataWrap(9, ""), new DataWrap(-16, ""),
@@ -28,8 +28,8 @@ public class InsertSort {
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "")};
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		insertSort(data);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

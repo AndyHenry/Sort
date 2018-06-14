@@ -1,13 +1,13 @@
 package sort;
 
 /**
- * Ã°ÅİÅÅĞò
+ * å†’æ³¡æ’åº
  * @author shkstart
  * 2013-11-27
  */
 public class BubbleSort {
 	public static void bubbleSort(DataWrap[] data) {
-		System.out.println("¿ªÊ¼ÅÅĞò");
+		System.out.println("å¼€å§‹æ’åº");
 		int arrayLength = data.length;
 		for (int i = 0; i < arrayLength - 1; i++) {
 			boolean flag = false;
@@ -31,8 +31,8 @@ public class BubbleSort {
 				new DataWrap(-30, ""), new DataWrap(-49, ""),
 				new DataWrap(21, ""), new DataWrap(30, "*"),
 				new DataWrap(30, "")};
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		bubbleSort(data);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

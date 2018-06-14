@@ -3,20 +3,20 @@ package sort;
 import java.util.Arrays;
 
 /**
- * »ùÊıÅÅĞò
- * 
+ * åŸºæ•°æ’åº
+ *
  * @author shkstart 2013-11-27
  */
 public class MultiKeyRadixSort {
 	public static void radixSort(int[] data, int radix, int d) {
-		System.out.println("¿ªÊ¼ÅÅĞò£º");
+		System.out.println("å¼€å§‹æ’åºï¼š");
 		int arrayLength = data.length;
 		int[] temp = new int[arrayLength];
 		int[] buckets = new int[radix];
 		for (int i = 0, rate = 1; i < d; i++) {
-			// ÖØÖÃcountÊı×é£¬¿ªÊ¼Í³¼ÆµÚ¶ş¸ö¹Ø¼ü×Ö
+			// é‡ç½®countæ•°ç»„ï¼Œå¼€å§‹ç»Ÿè®¡ç¬¬äºŒä¸ªå…³é”®å­—
 			Arrays.fill(buckets, 0);
-			// µ±dataÊı×éµÄÔªËØ¸´ÖÆµ½tempÊı×éÖĞ½øĞĞ»º´æ
+			// å½“dataæ•°ç»„çš„å…ƒç´ å¤åˆ¶åˆ°tempæ•°ç»„ä¸­è¿›è¡Œç¼“å­˜
 			System.arraycopy(data, 0, temp, 0, arrayLength);
 			for (int j = 0; j < arrayLength; j++) {
 				int subKey = (temp[j] / rate) % radix;
@@ -29,7 +29,7 @@ public class MultiKeyRadixSort {
 				int subKey = (temp[m] / rate) % radix;
 				data[--buckets[subKey]] = temp[m];
 			}
-			System.out.println("¶Ô" + rate + "Î»ÉÏ×Ó¹Ø¼ü×ÖÅÅĞò£º"
+			System.out.println("å¯¹" + rate + "ä½ä¸Šå­å…³é”®å­—æ’åºï¼š"
 					+ java.util.Arrays.toString(data));
 			rate *= radix;
 		}
@@ -37,8 +37,8 @@ public class MultiKeyRadixSort {
 
 	public static void main(String[] args) {
 		int[] data = { 1100, 192, 221, 12, 13 };
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		radixSort(data, 10, 4);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }

@@ -10,10 +10,10 @@ public class DataWrap implements Comparable<DataWrap>{
 	public String toString(){
 		return data + flag;
 	}
-	//¸ù¾ÝdataÊµÀý±äÁ¿À´¾ö¶¨Á½¸ödataWrapµÄ´óÐ¡
+	//æ ¹æ®dataå®žä¾‹å˜é‡æ¥å†³å®šä¸¤ä¸ªdataWrapçš„å¤§å°
 	@Override
 	public int compareTo(DataWrap dw) {
 		return this.data > dw.data? 1 : (this.data == dw.data? 0 : -1);
 	}
-	
+
 }

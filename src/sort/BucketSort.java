@@ -3,14 +3,14 @@ package sort;
 import java.util.Arrays;
 
 /**
- * Í°Ê½ÅÅĞò
- * 
- * @author shkstart 
+ * æ¡¶å¼æ’åº
+ *
+ * @author shkstart
  * 2013-11-27
  */
 public class BucketSort {
 	public static void bucketSort(DataWrap[] data, int min, int max) {
-		System.out.println("¿ªÊ¼ÅÅĞò");
+		System.out.println("å¼€å§‹æ’åº");
 		int arrayLength = data.length;
 		DataWrap[] temp = new DataWrap[arrayLength];
 		int[] buckets = new int[max - min];
@@ -34,8 +34,8 @@ public class BucketSort {
 				new DataWrap(5, "*"), new DataWrap(7, ""),
 				new DataWrap(3, ""), new DataWrap(-3, ""),
 				new DataWrap(1, ""),new DataWrap(3, "*")};
-		System.out.println("ÅÅĞòÖ®Ç°£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹å‰ï¼š\n" + java.util.Arrays.toString(data));
 		bucketSort(data, -3, 10);
-		System.out.println("ÅÅĞòÖ®ºó£º\n" + java.util.Arrays.toString(data));
+		System.out.println("æ’åºä¹‹åï¼š\n" + java.util.Arrays.toString(data));
 	}
 }
